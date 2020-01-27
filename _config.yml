@@ -36,8 +36,6 @@ language: "en"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-collections:
-    output: true
 paginate_path: "/page/:num/"
 
 # Content paginator
@@ -62,6 +60,13 @@ paginate_content:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-default-layout
+  - jekyll-feed
+  - jemoji
 
 # Exclude my node related stuff
 exclude: [
